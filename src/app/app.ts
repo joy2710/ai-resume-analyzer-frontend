@@ -1,12 +1,10 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { ResumeUploadComponent } from './resume-upload/resume-upload.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [ResumeUploadComponent],
+  template: `<app-resume-upload></app-resume-upload>`,
 })
-export class App {
-  protected readonly title = signal('frontend');
-}
+export class App {}

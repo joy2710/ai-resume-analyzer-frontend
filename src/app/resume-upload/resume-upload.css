@@ -1,0 +1,98 @@
+.page {
+  height: 100vh;
+  background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 600px;
+  padding: 30px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.upload-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.loader {
+  margin-top: 15px;
+  color: #555;
+}
+
+.result-card {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.result-text {
+  white-space: pre-line;
+  line-height: 1.6;
+  background: #f4f6f8;
+  padding: 15px;
+  border-radius: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.result-text {
+  white-space: pre-line;
+  line-height: 1.7;
+  background: #f4f6f8;
+  padding: 15px;
+  border-radius: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.result-text strong {
+  color: #2c3e50;
+}
+
+.download-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #0056b3;
+}

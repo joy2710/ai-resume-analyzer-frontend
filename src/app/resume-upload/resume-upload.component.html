@@ -1,0 +1,28 @@
+<div class="page">
+
+  <div class="card">
+
+    <h2>📄 AI Resume Analyzer</h2>
+
+    <div class="upload-section">
+      <input type="file" (change)="onFileSelect($event)" />
+      <button (click)="uploadFile()" [disabled]="loading">
+        {{ loading ? 'Analyzing...' : 'Upload & Analyze' }}
+      </button>
+    </div>
+
+    <!-- Loader -->
+    <div *ngIf="loading" class="loader">
+      ⏳ Processing your resume...
+    </div>
+
+    <!-- Result -->
+<div class="score" *ngIf="response">
+  ⭐ Resume Score: {{ extractScore(response.result) }}
+</div>
+<button (click)="downloadPDF()" class="download-btn">
+  📄 Download Report
+</button>
+  </div>
+
+</div>
