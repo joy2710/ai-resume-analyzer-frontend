@@ -33,7 +33,7 @@ uploadFile() {
 
   this.loading = true; // start loading
 
-  this.http.post('http://localhost:3000/resume/upload', formData)
+  this.http.post('https://resume-backend-p322.onrender.com/resume/upload', formData)
     .subscribe({
       next: (res: any) => {
         console.log(res); // debug
